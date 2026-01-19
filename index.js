@@ -21,7 +21,10 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "http://job-portal-frontend-tau-drab.vercel.app",
+    origin: [
+      "http://localhost:5173",
+      "https://job-portal-frontend-tau-drab.vercel.app",
+    ],
     credentials: true,
   })
 );
